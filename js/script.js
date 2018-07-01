@@ -5,11 +5,13 @@ const maxStudents = 10;
 //let totalPages = Math.ceil(allStudents / 10);
 
 function showPage(studentList, pageNum) {
-	allStudents.hide();
+//	allStudents.hide();
 	for (let i = 0; i < maxStudents; i ++) {
-//		$(studentList[i]).show();
+		$(studentList[i]).show();
 		if (i < (pageNum * 10) - 1 && i >= (pageNum * 10) - 10) {
 			$(studentList[i]).show();
+			} else {
+			$(studentList[i]).hide();
 			}
  }
 }
